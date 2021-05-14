@@ -1,0 +1,54 @@
+/*---------------------------- NAVBAR ----------------------------*/
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $dark;
+	color: $light;
+	height: $size;
+
+	// @extend %flex-sb;
+	@include flex(space-between);
+
+	a {
+		margin: 0;
+		color: $light;
+		width: calc($size * 4);
+		height: $size;
+		margin-left: $size;
+		@include flex(space-between);
+	}
+}
+
+.userform {
+	@include flex(space-between);
+
+	li {
+		height: $size;
+		transition: background-color 0.3s;
+
+		a {
+			margin: 0;
+			height: $size;
+			width: calc($size * 2);
+			padding: 16px 25px;
+			color: $light;
+			@include flex(center);
+
+			&:hover {
+				background-color: $light;
+				color: $dark;
+			}
+		}
+	}
+}
+
+.buy-btn > a {
+	background-color: $cyan;
+}
+
+.vote-btn > a {
+	background-color: $magenta;
+}

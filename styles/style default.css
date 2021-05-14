@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif; }
+
+body {
+  font: 14px "Montserrat", Helvetica, Arial, sans-serif;
+  overflow-x: hidden; }
+
+
+/*---------------------------- NAVBAR ----------------------------*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #222222;
+  color: #fafafa;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.navbar > a {
+  margin: 0;
+  color: #fafafa;
+  width: 240px;
+  height: 60px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.userform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.userform li {
+  height: 60px;
+  transition: background-color 0.3s; }
+
+.userform li > a {
+  margin: 0;
+  height: 60px;
+  width: 120px;
+  padding: 16px 25px;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.userform li > a:hover {
+  background-color: #fafafa;
+  color: #222222; }
+
+.buy-btn > a {
+  background-color: #00a6d6; }
+
+.vote-btn > a {
+  background-color: #f01c9c; }
+
+/*---------------------------- MAIN ----------------------------*/
+.main-page {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.main-h1 {
+  text-align: center;
+  margin-bottom: 100px; }
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh; }
+
+.buy,
+.vote,
+.join {
+  width: calc(100% / 3);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.buy {
+  background-color: rgba(0, 166, 214, 0.6); }
+
+.vote {
+  background-color: rgba(240, 28, 156, 0.6); }
+
+.join {
+  background-color: rgba(252, 226, 5, 0.6); }
+
+.buy:hover {
+  background-color: #00a6d6; }
+
+.vote:hover {
+  background-color: #f01c9c; }
+
+.join:hover {
+  background-color: #fce205; }
+
+.cta > div > a {
+  padding: 15px 60px;
+  border-radius: 25px;
+  background-color: #222222;
+  color: #fafafa;
+  opacity: 140%;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+
+.buy > a:hover {
+  background-color: #ed7014; }
+
+.vote > a:hover {
+  background-color: #03ac13; }
+
+.join > a:hover {
+  background-color: #a32cc4; }

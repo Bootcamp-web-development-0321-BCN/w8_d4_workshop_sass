@@ -1,0 +1,18 @@
+// @each $type, $color in $color-list {
+//   .message-#{$type} {
+//     color: $color;
+//   }
+// }
+
+// $color-list2: #fafafa #222222 #006ad6;
+
+
+@function half($num) {
+
+  @if $num > 0 {
+    @return $num / 2;
+  } @else {
+    @return $num / 2 * -1
+  }
+
+}
